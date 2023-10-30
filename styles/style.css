@@ -9,6 +9,7 @@ html {
 }
 
 .page {
+  display: flex;
   inline-size: 1200px;
   block-size: 100%;
   margin: auto;
@@ -39,12 +40,12 @@ ol {
 }
 
 .content {
-  display: grid;
-  grid-template-columns: 711px 399px;
+  display: flex;
   justify-content: center;
   align-items: end;
   gap: 30px;
-  margin: 133px 30px;
+  width: 1140px;
+  margin: auto;
 }
 
 .result {
@@ -98,7 +99,6 @@ ol {
   gap: 5px;
   cursor: pointer;
   appearance: none;
-  
 }
 
 .search-form__textfield {
@@ -113,7 +113,6 @@ ol {
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
-  line-height: normal;
 }
 
 
@@ -179,7 +178,6 @@ ol {
   outline: none;
   font-style: normal;
   font-weight: 700;
-  line-height: normal;
   border: 1px solid #FFF;
   background-color: transparent;
   cursor: pointer;
@@ -237,8 +235,6 @@ ol {
   align-items: end;
   overflow: auto;
 }
-
-
 
 .content__list-item {
   width: 100%;

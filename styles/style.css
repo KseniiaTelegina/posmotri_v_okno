@@ -41,7 +41,6 @@ ol {
 
 .content {
   display: flex;
-  justify-content: center;
   align-items: end;
   gap: 30px;
   width: 1140px;
@@ -201,7 +200,7 @@ ol {
   display: flex;
   flex-direction: column;
   gap: 26px;
-  max-width: 399px;
+  width: 100%;
   height: 100%;
 }
 
@@ -226,16 +225,12 @@ ol {
   flex-direction: column;
   align-items: end;
   overflow: auto;
-  scrollbar-width: none;
 }
 
-.content__list::-webkit-scrollbar {
-  display: none;
-}
 
 .content__list-item {
   width: 100%;
-  min-height: 103px;
+  height: 100%;
   margin-bottom: 30px;
 }
 
@@ -256,7 +251,7 @@ ol {
 
 .content__card-link:hover {
   text-decoration: underline;
-  text-underline-offset: 3px;
+  text-underline-offset: 1px;
 }
 
 .content__card-link:active {
@@ -278,8 +273,7 @@ ol {
   align-items: start;
 }
 
-.content__video-card-description-container {
-  position: relative; 
+.content__video-card-description-container { 
   display: flex;
   flex-direction: column;
   align-items: start;
@@ -334,4 +328,4 @@ ol {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
   white-space: nowrap;
-} 
+}
